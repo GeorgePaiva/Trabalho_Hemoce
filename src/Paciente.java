@@ -2,13 +2,22 @@
 public class Paciente extends Pessoa {
 	private String tiposangue;
 	private int codPac;
-	private String doar;
+	private int doar;
+	private int qtdDoacao;
 
-	public String getDoar() {
+	public int getQtdDoacao() {			
+		return qtdDoacao;
+	}
+
+	public void setQtdDoacao(int qtdDoacao) {
+		this.qtdDoacao = qtdDoacao;
+	}
+
+	public int getDoar() {
 		return doar;
 	}
 
-	public void setDoar(String doar) {
+	public void setDoar(int doar) {
 		this.doar = doar;
 	}
 
@@ -33,12 +42,24 @@ public class Paciente extends Pessoa {
 		System.out.println("Data de Nascimento: " + getDatNasc());
 		System.out.println("Sexo: " + getSexo());
 		System.out.println("Estado Civil: " + getEstadocivil());
-		System.out.println("Tipo de SanguÃ­neo: " + getTiposangue());
+		System.out.println("Tipo de Sanguíneo: " + getTiposangue());
 		System.out.println("Codigo do paciente: " + getCodPac());
 	}
 
-	public void doarSangue() {
-		this.doar = tiposangue;
-	}
+	public void doarSangue() throws Exception   
+	{
+		if (qtdDoacao >= 2) 
+		{
+			throw new Exception("Paciente não pode doar mais de uma vez no ano.");
+		}
+		
+		else if (qtdDoacao <=0)
 
+		{
+			throw new Exception("Paciente não fez doação.");
+		}
+		this.doar = qtdDoacao;
+	}
 }
+
+

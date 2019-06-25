@@ -36,6 +36,6 @@ public abstract class Pessoa {
 		this.estadocivil = estadocivil;
 	}
 
-	public abstract void doarSangue();
+	public abstract void doarSangue() throws Exception;
 
 }
