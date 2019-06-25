@@ -2,6 +2,15 @@
 public class Paciente extends Pessoa {
 	private String tiposangue;
 	private int codPac;
+	private String doar;
+
+	public String getDoar() {
+		return doar;
+	}
+
+	public void setDoar(String doar) {
+		this.doar = doar;
+	}
 
 	public String getTiposangue() {
 		return tiposangue;
@@ -19,11 +28,16 @@ public class Paciente extends Pessoa {
 		this.codPac = codPac;
 	}
 
+	public void doarSangue() {
+		this.doar = this.doar + tiposangue;
+	}
+
 	public void mostrarPaciente() {
-		System.out.println("O nome: " + getNome());
+		System.out.println("Paciente: " + getNome());
 		System.out.println("Data de Nascimento: " + getDatNasc());
 		System.out.println("Sexo: " + getSexo());
 		System.out.println("Estado Civil: " + getEstadocivil());
+		System.out.println("Tipo de Sanguíneo: " + getTiposangue());
 	}
 
 }

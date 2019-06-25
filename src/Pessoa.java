@@ -1,7 +1,6 @@
-
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
-	private int datNasc;
+	private String datNasc;
 	private String sexo;
 	private String estadocivil;
 
@@ -13,11 +12,11 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	public int getDatNasc() {
+	public String getDatNasc() {
 		return datNasc;
 	}
 
-	public void setDatNasc(int datNasc) {
+	public void setDatNasc(String datNasc) {
 		this.datNasc = datNasc;
 	}
 
@@ -36,6 +35,7 @@ public class Pessoa {
 	public void setEstadocivil(String estadocivil) {
 		this.estadocivil = estadocivil;
 	}
-	
+
+	public abstract void doarSangue();
 
 }
