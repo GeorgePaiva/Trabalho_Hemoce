@@ -38,7 +38,7 @@ public class Paciente extends Pessoa {
 	}
 
 	public void doarSangue() {
-		this.doar = this.doar + tiposangue;
+		this.doar = tiposangue;
 	}
 
 }
