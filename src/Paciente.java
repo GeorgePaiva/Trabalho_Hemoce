@@ -42,7 +42,7 @@ public class Paciente extends Pessoa {
 		System.out.println("Data de Nascimento: " + getDatNasc());
 		System.out.println("Sexo: " + getSexo());
 		System.out.println("Estado Civil: " + getEstadocivil());
-		System.out.println("Tipo de Sanguíneo: " + getTiposangue());
+		System.out.println("Tipo Sanguíneo: " + getTiposangue());
 		System.out.println("Codigo do paciente: " + getCodPac());
 	}
 

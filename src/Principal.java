@@ -10,8 +10,8 @@ public class Principal {
 		p1.setEstadocivil("Casado");
 		p1.setTiposangue("A+");
 		p1.setCodPac(1);
-		p1.setDoar(1);
-		p1.setQtdDoacao(3);
+		//p1.setDoar(1);
+		p1.setQtdDoacao(2);
 
 		p1.mostrarPaciente();
 
@@ -23,7 +23,7 @@ public class Principal {
 
 		}
 
-		System.out.println("O sangue doado: " + p1.getDoar());
+		System.out.println("O sangue doado: " + p1.getTiposangue());
 		System.out.println();
 
 		Paciente p2 = new Paciente();
@@ -33,7 +33,7 @@ public class Principal {
 		p2.setEstadocivil("Solteiro");
 		p2.setTiposangue("B+");
 		p2.setCodPac(2);
-		p2.setQtdDoacao(1);
+		p2.setQtdDoacao(2);
 
 		p2.mostrarPaciente();
 
@@ -45,7 +45,7 @@ public class Principal {
 
 		}
 
-		System.out.println("O sangue doado: " + p2.getDoar());
+		System.out.println("O sangue doado: " + p2.getTiposangue());
 		System.out.println();
 
 		Paciente p3 = new Paciente();
@@ -67,7 +67,7 @@ public class Principal {
 
 		}
 
-		System.out.println("O sangue doado: " + p3.getDoar());
+		System.out.println("O sangue doado: " + p3.getTiposangue());
 		System.out.println();
 
 	}
