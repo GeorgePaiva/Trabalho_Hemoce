@@ -28,16 +28,17 @@ public class Paciente extends Pessoa {
 		this.codPac = codPac;
 	}
 
-	public void doarSangue() {
-		this.doar = this.doar + tiposangue;
-	}
-
 	public void mostrarPaciente() {
 		System.out.println("Paciente: " + getNome());
 		System.out.println("Data de Nascimento: " + getDatNasc());
 		System.out.println("Sexo: " + getSexo());
 		System.out.println("Estado Civil: " + getEstadocivil());
 		System.out.println("Tipo de Sanguíneo: " + getTiposangue());
+		System.out.println("Codigo do paciente: " + getCodPac());
+	}
+
+	public void doarSangue() {
+		this.doar = this.doar + tiposangue;
 	}
 
 }
